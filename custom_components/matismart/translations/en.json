@@ -1,0 +1,185 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Select device",
+        "data": {
+          "hardware_id": "Device"
+        }
+      },
+      "connection_type": {
+        "title": "Select connection type",
+        "menu_options": {
+          "serial": "Serial (Modbus RTU)",
+          "network": "Ethernet (Modbus TCP)"
+        }
+      },
+      "network": {
+        "title": "Set up Modbus TCP",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "address": "Modbus device address"
+        },
+        "data_description": {
+          "host": "The hostname or IP address of the device",
+          "port": "The port on which Modbus server is listening",
+          "address": "The address of the Modbus device"
+        }
+      },
+      "serial": {
+        "title": "Set up Modbus RTU",
+        "data": {
+          "device": "Select serial port",
+          "address": "Modbus device address"
+        },
+        "data_description": {
+          "device": "The serial port to which the device is connected",
+          "address": "The address of the Modbus device"
+        },
+        "sections": {
+          "serial_config": {
+            "name": "Serial port configuration",
+            "data": {
+              "serial_baudrate": "Baudrate",
+              "serial_parity": "Parity",
+              "serial_stopbits": "Stop bits"
+            }
+          }
+        }
+      },
+      "serial_manual_path": {
+        "data": {
+          "device": "Serial port path"
+        },
+        "title": "Path"
+      }
+    },
+    "error": {
+      "unexpected_hardware_id": "Unexpected hardware ID",
+      "cannot_connect": "Failed to connect",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_in_progress": "Configuration flow is already in progress",
+      "already_configured": "Device is already configured",
+      "reconfigure_successful": "Re-configuration was successful",
+      "unique_id_mismatch": "Please ensure you reconfigure against the same device."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "system_clock": {
+        "name": "Power on time"
+      },
+      "display_status": {
+        "name": "Display status"
+      },
+      "handle_location": {
+        "name": "Handle location"
+      },
+      "command_closing_times": {
+        "name": "Command closing count"
+      },
+      "command_opening_times": {
+        "name": "Command opening count"
+      },
+      "manual_padlock_times": {
+        "name": "Manual padlock count"
+      },
+      "manual_closing_times": {
+        "name": "Manual closing count"
+      },
+      "ar_status": {
+        "name": "Auto reclose status"
+      },
+      "ar_current_attempt": {
+        "name": "Auto reclose count"
+      },
+      "ar_timer": {
+        "name": "Auto reclose timer"
+      },
+      "ar_exhausted_timer": {
+        "name": "Auto reclose failed timer"
+      }
+    },
+    "binary_sensor": {
+      "aux_output_status": {
+        "name": "Auxiliary output"
+      },
+      "padlock_status": {
+        "name": "Padlock"
+      }
+    },
+    "number": {
+      "ar_total_attempts": {
+        "name": "AR attempts"
+      },
+      "ar_wait_time_1": {
+        "name": "AR wait 1"
+      },
+      "ar_stable_time_1": {
+        "name": "AR stable 1"
+      },
+      "ar_wait_time_2": {
+        "name": "AR wait 2"
+      },
+      "ar_stable_time_2": {
+        "name": "AR stable 2"
+      },
+      "ar_wait_time_3": {
+        "name": "AR wait 3"
+      },
+      "ar_stable_time_3": {
+        "name": "AR stable 3"
+      },
+      "ar_wait_time_4": {
+        "name": "AR wait 4"
+      },
+      "ar_stable_time_4": {
+        "name": "AR stable 4"
+      },
+      "ar_wait_time_5": {
+        "name": "AR wait 5"
+      },
+      "ar_stable_time_5": {
+        "name": "AR stable 5"
+      },
+      "ar_wait_time_6": {
+        "name": "AR wait 6"
+      },
+      "ar_stable_time_6": {
+        "name": "AR stable 6"
+      },
+      "ar_wait_time_7": {
+        "name": "AR wait 7"
+      },
+      "ar_stable_time_7": {
+        "name": "AR stable 7"
+      },
+      "ar_wait_time_8": {
+        "name": "AR wait 8"
+      },
+      "ar_stable_time_8": {
+        "name": "AR stable 8"
+      },
+      "ar_wait_time_9": {
+        "name": "AR wait 9"
+      },
+      "ar_stable_time_9": {
+        "name": "AR stable 9"
+      },
+      "ar_wait_time_10": {
+        "name": "AR wait 10"
+      },
+      "ar_stable_time_10": {
+        "name": "AR stable 10"
+      }
+    },
+    "switch": {
+      "control": {
+        "name": "Control"
+      }
+    }
+  }
+}

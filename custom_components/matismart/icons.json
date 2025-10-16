@@ -1,0 +1,103 @@
+{
+  "entity": {
+    "sensor": {
+      "display_status": {
+        "default": "mdi:led-outline"
+      },
+      "command_closing_times": {
+        "default": "mdi:counter"
+      },
+      "command_opening_times": {
+        "default": "mdi:counter"
+      },
+      "manual_padlock_times": {
+        "default": "mdi:counter"
+      },
+      "manual_closing_times": {
+        "default": "mdi:counter"
+      },
+      "ar_current_attempt": {
+        "default": "mdi:restart"
+      },
+      "ar_timer": {
+        "default": "mdi:timer"
+      },
+      "ar_exhausted_timer": {
+        "default": "mdi:timer"
+      }
+    },
+    "number": {
+      "ar_total_attempts": {
+        "default": "mdi:restart"
+      },
+      "ar_wait_time_1": {
+        "default": "mdi:timer"
+      },
+      "ar_wait_time_2": {
+        "default": "mdi:timer"
+      },
+      "ar_wait_time_3": {
+        "default": "mdi:timer"
+      },
+      "ar_wait_time_4": {
+        "default": "mdi:timer"
+      },
+      "ar_wait_time_5": {
+        "default": "mdi:timer"
+      },
+      "ar_wait_time_6": {
+        "default": "mdi:timer"
+      },
+      "ar_wait_time_7": {
+        "default": "mdi:timer"
+      },
+      "ar_wait_time_8": {
+        "default": "mdi:timer"
+      },
+      "ar_wait_time_9": {
+        "default": "mdi:timer"
+      },
+      "ar_wait_time_10": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_1": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_2": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_3": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_4": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_5": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_6": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_7": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_8": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_9": {
+        "default": "mdi:timer"
+      },
+      "ar_stable_time_10": {
+        "default": "mdi:timer"
+      }
+    },
+    "binary_sensor": {
+      "aux_output_status": {
+        "default": "mdi:electric-switch-closed",
+        "state": {
+          "on": "mdi:electric-switch"
+        }
+      }
+    }
+  }
+}
